@@ -1,0 +1,263 @@
+*{
+    font-family: 'Oxygen', sans-serif;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.navbar-control {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.3;
+}
+
+.menu-icon{
+    width: 40px;
+    height: 37px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-icon span{
+    width: 37px;
+    height: 4px;
+    background-color: var(--dh-text-dark);
+    
+    position: absolute;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.menu-icon span:nth-child(1){
+    transform: translateY(-15px);
+    width: 23px;
+    left: 2px;
+}
+.menu-icon span:nth-child(2){
+    transform: translateY(15px);
+    width: 13px;
+    left: 2px;
+}
+
+.menu-icon.show span:nth-child(3){
+    transform: translateX(-60px);
+    opacity: 0;
+    
+}
+.menu-icon.show span:nth-child(1){
+    transform: translateY(0) rotate(45deg);
+    width: 32px;
+    transition: 0.45s;
+    
+}
+.menu-icon.show span:nth-child(2){
+    transform: translateY(0) rotate(-45deg);
+    width: 32px;
+    transition: 0.75s;
+    
+}
+
+
+.o-n:focus {
+    box-shadow: none;
+}
+
+/* dark-mode */
+
+html[data-theme="light"] {
+    --dh-bg-dark: var(--bs-white);
+    --dh-text-dark: var(--pdf-zinc-900);
+
+}
+
+html[data-theme="dark"] {
+    --dh-bg-dark: var(--pdf-zinc-900);
+    --dh-text-dark: var(--pdf-slate-200);
+    --dh-text-mute: var(--pdf-slate-500);
+    --none: none;
+}
+
+/* loading */
+
+.loading {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: var(--dh-bg-dark);
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.2s;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: var(--dh-text-dark);
+  
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+  /* loading end */
+
+body {
+    background-color: var(--dh-bg-dark);
+    color: var(--dh-text-dark);
+}
+
+
+
+.card {
+    background-color: var(--dh-bg-dark);
+    color: var(--dh-text-dark);
+}
+
+.text-muted{
+    color: var(--dh-text-mute) !important;
+
+}
+.navbar {
+    background-color: var(--dh-bg-dark) !important;
+}
+
+.navbar a {
+    color: var(--dh-text-dark) !important;
+}
+
+.navbar {
+    background-color: var(--dh-bg-dark) !important;
+}
+.navbar-brand span{
+    color: rgb(7, 132, 114)!important;;
+}
+
+/* .navbar li a.active, */
+.navbar li a:hover{
+    color:rgb(7, 132, 114)!important;
+   
+}
+.fw-bold span {
+    color: rgb(7, 132, 114);
+    
+ }
+
+.rounded5 {
+    border-radius: 10px;
+} 
+
+.testimonial {
+    margin-top: -14px;
+    margin-left: 30px;
+}
+
+
+#home {
+    margin-bottom: 65px;
+}
+
+/* slick */
+
+
+.slick-next {
+    
+    top: 190px;
+    right: 20px;
+    
+    
+}
+
+.slick-prev {
+    top: 190px;
+    left: 20px;
+    z-index: 2;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+
+
+.service-icon {
+    width: 45px;
+    height:45px;
+
+}
+
+/* footer-icon */
+
+.footer-fixed {
+    position: fixed;
+    bottom: 40px;
+    right: -1400px;
+}
+
+.footer-icon {
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+}
+
+.footer-fixed.show {
+    display: block!important;
+}
+.scroll {
+    scroll-behavior: smooth;
+}
+
+
+.hr{
+    display: none;
+}
+
+
+ @media screen and (max-width: 576px) {
+    .footer-fixed {
+        right: -290px;
+        bottom: 40px;
+    }
+    .loacation {
+        margin-bottom: 20px;
+    }
+
+    .loacation-list {
+        margin-bottom: 30px;
+    }
+
+    .map {
+        margin-bottom: 30px;
+    }
+    
+    .hr {
+        display: block;
+    }
+}
+
+
+
