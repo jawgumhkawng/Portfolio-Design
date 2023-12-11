@@ -154,7 +154,8 @@ body {
     background-color: var(--dh-bg-dark) !important;
 }
 .navbar-brand span{
-    color: rgb(7, 132, 114)!important;;
+    display: none;
+    
 }
 
 /* .navbar li a.active, */
@@ -214,8 +215,10 @@ body {
 
 .footer-fixed {
     position: fixed;
-    bottom: 40px;
-    right: -1400px;
+    bottom: 90px;
+    right: 40px;
+    
+    
 }
 
 .footer-icon {
@@ -238,9 +241,14 @@ body {
 
 
  @media screen and (max-width: 576px) {
+
+    .navbar-brand span{
+        display: inline;
+        color: rgb(7, 132, 114)!important;
+    }
     .footer-fixed {
-        right: -290px;
-        bottom: 40px;
+        right: 40px;
+        bottom: 70px;
     }
     .loacation {
         margin-bottom: 20px;

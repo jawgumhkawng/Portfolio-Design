@@ -40,6 +40,14 @@ var waypoint = new Waypoint({
   })
 
 
+      // Back to top button
+   
+    // $('.footer-fixed').click(function () {
+    //     $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+    //     return false;
+    // });
+
+
   // theme
 
    let card = document.querySelectorAll( '.card' );

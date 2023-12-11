@@ -216,11 +216,11 @@ ScrollReveal({
   
   ScrollReveal({
     origin: 'bottom',
-    distance: '230px',
-    duration: 2100, 
+    distance: '200px',
+    duration: 2000, 
     reset: true,
   }).reveal('.footerName',{
     interval: 140,
     scale: 0.8,
-    viewFactor: 1.0,
+    viewFactor: 2.0,
   });
